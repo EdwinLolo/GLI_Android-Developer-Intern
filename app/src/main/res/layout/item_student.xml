@@ -9,7 +9,8 @@
         android:id="@+id/profilePicture"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginEnd="8dp" />
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/Profile" />
 
     <LinearLayout
         android:layout_width="0dp"
@@ -21,7 +22,7 @@
             android:id="@+id/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Name"
+            android:text="@string/Nama"
             android:textSize="16sp"
             android:textStyle="bold" />
 
@@ -29,7 +30,7 @@
             android:id="@+id/address"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Address"
+            android:text="@string/Alamat"
             android:textSize="14sp" />
     </LinearLayout>
 
@@ -44,14 +45,17 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:contentDescription="@string/Edit"
             android:src="@drawable/ic_edit"
             android:layout_gravity="center" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:contentDescription="@string/Delete"
             android:src="@drawable/ic_cancel"
             android:layout_gravity="center"
-            android:layout_marginLeft="8dp" />
+            android:layout_marginStart="8dp" />
+
     </LinearLayout>
 </LinearLayout>

@@ -5,14 +5,16 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 
+@Suppress("DEPRECATION")
 class Login : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
+
         setContentView(R.layout.activity_login)
+        window.statusBarColor = ContextCompat.getColor(this, R.color.red)
 
 
         val emailEditText = findViewById<EditText>(R.id.email)
